@@ -7,7 +7,11 @@ public class ReverseNumber {
     public static int reverseNumb(int num){
         int revVal = 0;
         while(num > 0){
-            revVal = revVal * 10 + num % 10;
+            int digit = num % 10;
+            int maxVal = Integer.MAX_VALUE;
+            int minVal = Integer.MIN_VALUE;
+            if(revVal > maxVal / 10 || revVal < minVal/10) return 0;
+            revVal = revVal * 10 + digit;
             num = num /10;
         }
 
