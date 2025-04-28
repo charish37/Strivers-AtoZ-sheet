@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class CountDigit{
 
     // brute force approach
+
     // public  static int countVal(int num){
     //   int count = 0;
     //    while(num > 0){
@@ -13,6 +14,7 @@ public class CountDigit{
     // }
 
     // optimal sol
+    
     public static int countVal(int num){
       return (int) Math.log10(num) + 1;
     }
